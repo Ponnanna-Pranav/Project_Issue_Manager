@@ -1,0 +1,16 @@
+# Logs
+*.log
+hs_err_pid*
+
+# VS Code
+.vscode/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/target/
+
+# Environment files
+.env
