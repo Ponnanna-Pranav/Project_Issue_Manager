@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../api/api";
 import { Link } from "react-router-dom";
-import { Filter, Search } from "lucide-react";
+import { Search } from "lucide-react";
 
 export default function Filters() {
     const [issues, setIssues] = useState([]);
