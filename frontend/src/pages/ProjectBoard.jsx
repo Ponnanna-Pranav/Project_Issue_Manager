@@ -57,7 +57,7 @@ export default function ProjectBoard({ openCreateModal }) {
     }, [issues, searchQuery]);
 
     const onDragEnd = async (result) => {
-        const { source, destination, draggableId } = result;
+        const { source, destination } = result;
 
         if (!destination) return;
 
