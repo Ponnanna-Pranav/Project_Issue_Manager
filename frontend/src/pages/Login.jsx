@@ -16,24 +16,24 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+  
     try {
       const res = await api.post("/auth/login", {
         email,
         password,
       });
-
-      // store JWT and user info
+  
       localStorage.setItem("token", res.data.token);
-      if (res.data.user) {
-        localStorage.setItem("user", JSON.stringify(res.data.user));
-      }
-
-      // go to dashboard
+  
+      alert("Login successful!");
       navigate("/dashboard");
+  
     } catch (err) {
+      console.log(err.response?.data);
       alert("Invalid credentials");
     }
   };
+
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#F4F5F7] px-4">
