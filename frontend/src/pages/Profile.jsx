@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { User, Mail, Shield, Briefcase } from "lucide-react";
+import {Mail, Shield, Briefcase } from "lucide-react";
 
 export default function Profile() {
     const [user, setUser] = useState(null);
