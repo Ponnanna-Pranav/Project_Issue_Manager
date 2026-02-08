@@ -40,7 +40,7 @@ export default function Login() {
       {/* Logo */}
       <div className="mb-8 flex items-center gap-2 text-[#172B4D]">
         <Layout className="w-8 h-8 text-[#0052CC]" />
-        <span className="text-2xl font-bold tracking-tight">JiraClone</span>
+        <span className="text-2xl font-bold tracking-tight">Project Issue Manager</span>
       </div>
 
       <div className="bg-white p-8 rounded shadow-md w-full max-w-[400px] border border-[#DFE1E6]">
